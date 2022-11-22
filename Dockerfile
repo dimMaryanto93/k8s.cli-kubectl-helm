@@ -5,6 +5,7 @@ ENV KUBECTL_VERSION=v1.23.14
 ENV HELM_VERSION=v3.5.4
 
 USER root
+RUN yum install epel-release -y
 RUN yum install wget curl gettext jq -y
 
 COPY kubectl .
