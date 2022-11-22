@@ -24,7 +24,7 @@ image: maven:3.6.3-jdk-11
 
 deploy_k8s:
   image:
-    name: dimmaryanto93/k8s-kubectl-helm:1.21.0-release
+    name: dimmaryanto93/k8s-kubectl-helm:1.23.14-release
   stage: deploy
   tags:
     - kubernetes

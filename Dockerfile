@@ -1,11 +1,11 @@
 FROM centos:centos7
 LABEL org.label-schema.schema-version=1.21.0 maintaners="software.dimas_m@icloud.com"
 
-ENV KUBECTL_VERSION=v1.21.0
+ENV KUBECTL_VERSION=v1.23.14
 ENV HELM_VERSION=v3.5.4
 
 USER root
-RUN yum install wget curl gettext -y
+RUN yum install wget curl gettext jq -y
 
 COPY kubectl .
 RUN install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
