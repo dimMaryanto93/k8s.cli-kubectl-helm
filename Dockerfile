@@ -1,8 +1,8 @@
 FROM centos:centos7
 LABEL org.label-schema.schema-version=1.23.0 maintaners="software.dimas_m@icloud.com"
 
-ENV KUBECTL_VERSION=v1.23.14
-ENV HELM_VERSION=v3.5.4
+ARG KUBECTL_VERSION=v1.23.14
+ARG HELM_VERSION=v3.5.4
 
 USER root
 RUN yum install epel-release -y
